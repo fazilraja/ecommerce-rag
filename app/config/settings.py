@@ -37,7 +37,7 @@ class GeminiSettings(LLMSettings):
 
     api_key: str = Field(default_factory=lambda: os.getenv("GEMINI_API_KEY"))
     default_model: str = Field(default="gemini-1.5-flash")
-    embedding_model: str = Field(default="models/text-embedding-004")
+    embedding_model: str = Field(default="models/embedding-001")
 
 class DatabaseSettings(BaseModel):
     """Database connection settings."""
